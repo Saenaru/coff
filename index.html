@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b050e43378cb5c70278542240104b38e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b050e43378cb5c70278542240104b38e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b050e43378cb5c70278542240104b38e = L.map(
+                "map_b050e43378cb5c70278542240104b38e",
+                {
+                    center: [55.981349, 37.413861],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d42e1e7220c8ac4ee8cc2640b5c56858 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_d42e1e7220c8ac4ee8cc2640b5c56858.addTo(map_b050e43378cb5c70278542240104b38e);
+        
+    
+            var marker_c746be2ed4e107296d103e434fedf436 = L.marker(
+                [55.981349, 37.413861],
+                {
+}
+            ).addTo(map_b050e43378cb5c70278542240104b38e);
+        
+    
+            var icon_55cbabcb9de678c10b3ed723fdfcc32a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_c746be2ed4e107296d103e434fedf436.setIcon(icon_55cbabcb9de678c10b3ed723fdfcc32a);
+        
+    
+        var popup_4bf32abae290b4f9a7c534d431e2bda9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9a8c7a6b3ba8880407d6ba93fd064f42 = $(`<div id="html_9a8c7a6b3ba8880407d6ba93fd064f42" style="width: 100.0%; height: 100.0%;">Ваше местоположение</div>`)[0];
+                popup_4bf32abae290b4f9a7c534d431e2bda9.setContent(html_9a8c7a6b3ba8880407d6ba93fd064f42);
+            
+        
+
+        marker_c746be2ed4e107296d103e434fedf436.bindPopup(popup_4bf32abae290b4f9a7c534d431e2bda9)
+        ;
+
+        
+    
+    
+            marker_c746be2ed4e107296d103e434fedf436.bindTooltip(
+                `<div>
+                     Вы здесь
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0a0d6d18ee1ba12a4c1d0f334dfd68ff = L.marker(
+                [55.89692979858469, 37.389799],
+                {
+}
+            ).addTo(map_b050e43378cb5c70278542240104b38e);
+        
+    
+        var popup_6e1d0e4906dbd89169ff83edeaff99c9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_872fe1b1ad2e952689d02cd7d5a79ef0 = $(`<div id="html_872fe1b1ad2e952689d02cd7d5a79ef0" style="width: 100.0%; height: 100.0%;">КОФЕЙНЯ 16114 (9.52 км)</div>`)[0];
+                popup_6e1d0e4906dbd89169ff83edeaff99c9.setContent(html_872fe1b1ad2e952689d02cd7d5a79ef0);
+            
+        
+
+        marker_0a0d6d18ee1ba12a4c1d0f334dfd68ff.bindPopup(popup_6e1d0e4906dbd89169ff83edeaff99c9)
+        ;
+
+        
+    
+    
+            marker_0a0d6d18ee1ba12a4c1d0f334dfd68ff.bindTooltip(
+                `<div>
+                     КОФЕЙНЯ 16114
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_43dfef6c34ae647011c5af30e5e23ee5 = L.marker(
+                [55.921625, 37.534801],
+                {
+}
+            ).addTo(map_b050e43378cb5c70278542240104b38e);
+        
+    
+        var popup_df230190f7180d6ef9627b58afb8fe37 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5c2405eaef84e802d6b6b2b8f00b90d6 = $(`<div id="html_5c2405eaef84e802d6b6b2b8f00b90d6" style="width: 100.0%; height: 100.0%;">Coffee Play (10.06 км)</div>`)[0];
+                popup_df230190f7180d6ef9627b58afb8fe37.setContent(html_5c2405eaef84e802d6b6b2b8f00b90d6);
+            
+        
+
+        marker_43dfef6c34ae647011c5af30e5e23ee5.bindPopup(popup_df230190f7180d6ef9627b58afb8fe37)
+        ;
+
+        
+    
+    
+            marker_43dfef6c34ae647011c5af30e5e23ee5.bindTooltip(
+                `<div>
+                     Coffee Play
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e5614376ad4e971d6188576a4f6c106c = L.marker(
+                [55.885304795169134, 37.406258],
+                {
+}
+            ).addTo(map_b050e43378cb5c70278542240104b38e);
+        
+    
+        var popup_189725b805ade7262d1f9b6f20503488 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ffd148ffbf3e8c711fe51108c93c2ce3 = $(`<div id="html_ffd148ffbf3e8c711fe51108c93c2ce3" style="width: 100.0%; height: 100.0%;">КОФЕ (10.70 км)</div>`)[0];
+                popup_189725b805ade7262d1f9b6f20503488.setContent(html_ffd148ffbf3e8c711fe51108c93c2ce3);
+            
+        
+
+        marker_e5614376ad4e971d6188576a4f6c106c.bindPopup(popup_189725b805ade7262d1f9b6f20503488)
+        ;
+
+        
+    
+    
+            marker_e5614376ad4e971d6188576a4f6c106c.bindTooltip(
+                `<div>
+                     КОФЕ
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c15f2db509b160d548f199db88c5ebe5 = L.marker(
+                [55.92028880545831, 37.54962299999999],
+                {
+}
+            ).addTo(map_b050e43378cb5c70278542240104b38e);
+        
+    
+        var popup_3a29be200e35cced124861e0f0099101 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1a44d4b5ab75a9c1a66b0eae4f98f9df = $(`<div id="html_1a44d4b5ab75a9c1a66b0eae4f98f9df" style="width: 100.0%; height: 100.0%;">Kruk cofeeshop (10.87 км)</div>`)[0];
+                popup_3a29be200e35cced124861e0f0099101.setContent(html_1a44d4b5ab75a9c1a66b0eae4f98f9df);
+            
+        
+
+        marker_c15f2db509b160d548f199db88c5ebe5.bindPopup(popup_3a29be200e35cced124861e0f0099101)
+        ;
+
+        
+    
+    
+            marker_c15f2db509b160d548f199db88c5ebe5.bindTooltip(
+                `<div>
+                     Kruk cofeeshop
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_99eb0c1ac348a95fadf2f595576175ff = L.marker(
+                [55.91330028576496, 37.54370870048651],
+                {
+}
+            ).addTo(map_b050e43378cb5c70278542240104b38e);
+        
+    
+        var popup_6191c73e6c5ed72edb04b9fd6bcc2ef3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c4215a4e15b1ce70a348b0c2c95132ba = $(`<div id="html_c4215a4e15b1ce70a348b0c2c95132ba" style="width: 100.0%; height: 100.0%;">Кофе Сити (11.10 км)</div>`)[0];
+                popup_6191c73e6c5ed72edb04b9fd6bcc2ef3.setContent(html_c4215a4e15b1ce70a348b0c2c95132ba);
+            
+        
+
+        marker_99eb0c1ac348a95fadf2f595576175ff.bindPopup(popup_6191c73e6c5ed72edb04b9fd6bcc2ef3)
+        ;
+
+        
+    
+    
+            marker_99eb0c1ac348a95fadf2f595576175ff.bindTooltip(
+                `<div>
+                     Кофе Сити
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
